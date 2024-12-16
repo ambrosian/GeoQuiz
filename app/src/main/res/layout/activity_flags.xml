@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/geobg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/flags_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Score: 0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/petrovsans"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/flags_question_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:10"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:fontFamily="@font/petrovsans"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/flags_question_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Question?"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/petrovsans"/>
+
+        <ImageView
+            android:id="@+id/flags_image"
+            android:layout_width="wrap_content"
+            android:layout_height="128dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_flag_of_argentina"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/flags_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/flags_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:progress="1"
+                android:progressBackgroundTint="@color/white"
+                android:progressTint="@color/green"
+                android:minHeight="10dp"
+                android:layout_marginEnd="15dp" />
+
+            <TextView
+                android:id="@+id/flags_questions_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1/10"
+                android:textColor="@color/white"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/flags_answer1_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Answer1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/petrovsans"
+            android:background="@drawable/button_gradient"
+            android:padding="15dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:id="@+id/flags_answer2_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Answer2"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/petrovsans"
+            android:background="@drawable/button_gradient"
+            android:padding="15dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:id="@+id/flags_answer3_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Answer3"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/petrovsans"
+            android:background="@drawable/button_gradient"
+            android:padding="15dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:id="@+id/flags_answer4_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Answer4"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/petrovsans"
+            android:background="@drawable/button_gradient"
+            android:padding="15dp"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

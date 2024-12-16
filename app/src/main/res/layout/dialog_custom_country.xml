@@ -1,0 +1,69 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Country"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/customCountryInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your country here"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Cancel"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/red"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue"
+                android:padding="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

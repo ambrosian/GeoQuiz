@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/geobg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_alignParentTop="true">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/geoquizlogoo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/geoquizlogo"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/capitals_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gradient"
+            android:layout_marginBottom="20dp"
+            android:text="CAPITALS"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/petrovsans"
+            android:elevation="5dp"/>
+
+        <Button
+            android:id="@+id/flags_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gradient"
+            android:layout_marginBottom="20dp"
+            android:text="FLAGS"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/petrovsans"
+            android:elevation="5dp"/>
+
+        <Button
+            android:id="@+id/country_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gradient"
+            android:layout_marginBottom="20dp"
+            android:text="FIND THE COUNTRY"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/petrovsans"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
